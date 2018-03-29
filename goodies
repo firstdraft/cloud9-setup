@@ -7,7 +7,8 @@ fancy_echo() {
   # shellcheck disable=SC2059
   printf "\n$fmt\n" "$@"
 }
-
+fancy_echo "Installing ability to open files from terminal"
+npm install -g c9
 fancy_echo "Installing Ruby 2.4.3"
 rvm install ruby-2.4.3
 rvm use 2.4.3

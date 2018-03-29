@@ -1,0 +1,25 @@
+#!/bin/sh
+
+
+fancy_echo() {
+  local fmt="$1"; shift
+
+  # shellcheck disable=SC2059
+  printf "\n$fmt\n" "$@"
+}
+
+fancy_echo "Installing Ruby 2.4.3"
+rvm install ruby-2.4.3
+rvm use 2.4.3
+fancy_echo "Installing Bundler 2.4.3"
+gem install bundler
+fancy_echo "Installing Rails 5.1.4"
+gem install rails --version=5.1.4
+rvm --default use 2.4.3
+rvm list
+fancy_echo "Installing diff2html-cli"
+npm install -g diff2html-cli
+fancy_echo "Installing rufo gem"
+gem install rufo
+fancy_echo "Installing htmlbeautifier gem"
+gem install htmlbeautifier

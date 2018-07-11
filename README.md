@@ -4,20 +4,25 @@ A student setup script for Cloud9
 
 ## Install
 
-Download the script:
+### Download the script
 
 ```
-curl --remote-name https://raw.githubusercontent.com/firstdraft/cloud9-setup/master/goodies
+curl --remote-name https://raw.githubusercontent.com/firstdraft/cloud9-setup/master/cloud9_plugins.sh
 ```
 
-Execute the downloaded script:
+### Execute the downloaded script
 
 ```
-sh goodies 2>&1 | tee ~/workspace/cloud9-setup.log
+sh cloud9_plugins.sh
 ```
 
-Optionally, review the log:
+### Enable autoformatting for `.rb` and `.html.erb` files
+
+From the `Cloud9` menu, select `Open Your Init Script` and add the following:
 
 ```
-c9 ~/workspace/cloud9-setup.log
+services.pluginManager.loadPackage([
+  "~/.c9/plugins/formatruby/package.json",
+  "~/.c9/plugins/formathtmlerb/package.json",
+]);
 ```

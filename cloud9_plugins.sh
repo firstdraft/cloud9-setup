@@ -10,26 +10,11 @@ fancy_echo() {
 
 fancy_echo "Installing ability to open files from terminal"
 npm install -g c9
-fancy_echo "Installing Ruby 2.4.3"
-rvm install ruby-2.4.3
-rvm use 2.4.3
-fancy_echo "Installing Bundler 2.4.3"
-gem install bundler
-fancy_echo "Installing Rails 5.1.4"
-gem install rails --version=5.1.4
-rvm --default use 2.4.3
-rvm list
-fancy_echo "Installing diff2html-cli"
-npm install -g diff2html-cli
 fancy_echo "Installing rufo gem"
 gem install rufo
 fancy_echo "Installing htmlbeautifier gem"
 gem install htmlbeautifier
-fancy_echo "Installing imagemagick
-sudo add-apt-repository main
-sudo apt-get update
-sudo apt-get install imagemagick
-fancy_echo "Installing plugins
+fancy_echo "Installing plugins"
 mkdir ~/.c9/plugins
 git clone https://github.com/firstdraft/rubysnippets.git ~/.c9/plugins/rubysnippets
 git clone https://github.com/firstdraft/formathtmlerb.git ~/.c9/plugins/formathtmlerb

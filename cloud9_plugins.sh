@@ -11,7 +11,7 @@ fancy_echo() {
 fancy_echo "Installing ability to open files from terminal"
 npm install -g c9
 fancy_echo "Installing rufo gem"
-gem install rufo
+gem install rufo -v 0.3.1
 fancy_echo "Installing htmlbeautifier gem"
 gem install htmlbeautifier
 fancy_echo "Installing plugins"
